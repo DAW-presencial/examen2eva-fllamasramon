@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Tutor;
 
-class DatosController extends Controller
-{
+class DatosController extends Controller {
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
         //
     }
 
@@ -21,8 +21,7 @@ class DatosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -32,9 +31,34 @@ class DatosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request) {
+        $request->validate([
+            'empresa_nombre' => 'required',
+            'tutor_nombre'=> 'required',
+            'tutor_apellido1'=> 'required',
+            'tutor_apellido2'=> 'required',
+            'estado'=> 'required',
+            'email'=> 'required',
+            'phone'=> 'required',
+            'pais'=> 'required',
+            'provincia'=> 'required',
+            'municipio'=> 'required'
+        ]);
+
+        $DatosController = new Tutor([
+            'empresa_nombre' => $request->get('empresa_nombre'),
+            'tutor_nombre' => $request->get('tutor_nombre'),
+            'tutor_apellido1' => $request->get('tutor_apellido1'),
+            'tutor_apellido2' => $request->get('tutor_apellido2'),
+            'estado' => $request->get('stado'),
+            'email' => $request->get('email'),
+            'phone' => $request->get('phone'),
+            'pais' => $request->get('pais'),
+            'provincia' => $request->get('provincia'),
+            'municipio' => $request->get('municipio'),
+        ]);
+        $DatosController->save();
+        return redirect('/tutores')->with('success', 'Tutor saved!');
     }
 
     /**
@@ -43,8 +67,7 @@ class DatosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
+    public function show($id) {
         //
     }
 
@@ -54,8 +77,7 @@ class DatosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         //
     }
 
@@ -66,8 +88,7 @@ class DatosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
         //
     }
 
@@ -77,8 +98,8 @@ class DatosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         //
     }
+
 }

@@ -25,7 +25,9 @@ and open the template in the editor.
                 <li>{{ $error }}</li>
                 @endforeach
             </ul>
-        </div><br />
+        </div>
+        <br /> 
+        @endif
         <div class="container mt-5">
             <form action="">
                 <fieldset class="form-group shadow p-3 mb-5 bg-white rounded">
