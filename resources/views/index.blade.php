@@ -29,19 +29,19 @@ and open the template in the editor.
                     <div class="row mb-3">
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Nombre de la empresa</label>
-                            <input type="text" class="form-control" id="empresa_nombre" placeholder="Empresa">
+                            <input type="text" value="{{ old('empresa_nombre') }}" class="form-control" id="empresa_nombre" placeholder="Empresa">
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Nombre del Tutor</label>
-                            <input type="text" class="form-control" id="tutor_nombre" placeholder="Nombre">
+                            <input type="text" value="{{ old('tutor_nombre') }}"class="form-control" id="tutor_nombre" placeholder="Nombre">
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Primer Apellido</label>
-                            <input type="text" class="form-control" id="tutor_apellido1">
+                            <input type="text" value="{{ old('tutor_apellido1') }}"class="form-control" id="tutor_apellido1">
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Segundo apellido</label>
-                            <input type="text" class="form-control" id="tutor_apellido2">
+                            <input type="text" value="{{ old('tutor_apellido2') }}"class="form-control" id="tutor_apellido2">
                         </div>
                     </div>
                     <div>
@@ -55,11 +55,11 @@ and open the template in the editor.
                     <div class="row">
                         <div class="col-6 mb-3">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="prueba@prueba.com">
+                            <input type="email" value="{{ old('email') }}"class="form-control" id="email" placeholder="prueba@prueba.com">
                         </div>
                         <div class="col-3 mb-3">
                             <label for="exampleFormControlTextarea1" class="badge bg-info text-dark">Telefono</label>
-                            <input type="phone" class="form-control" id="phone" placeholder="xxx-xxx-xxx">
+                            <input type="phone" value="{{ old('phone') }}"class="form-control" id="phone" placeholder="xxx-xxx-xxx">
                         </div>
                         <div>
                             <select class="form-select" aria-label="Default select example" id="pais">
