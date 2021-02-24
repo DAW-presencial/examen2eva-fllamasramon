@@ -28,24 +28,24 @@ and open the template in the editor.
                     <legend>Tutor de la empresa</legend>
                     <div class="row mb-3">
                         <div class="col-12">
-                            <label for="exampleFormControlInput1" class="badge bg-info text-dark">Nombre de la empresaa</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Empresa">
+                            <label for="exampleFormControlInput1" class="badge bg-info text-dark">Nombre de la empresa</label>
+                            <input type="text" class="form-control" id="empresa_nombre" placeholder="Empresa">
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Nombre del Tutor</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                            <input type="text" class="form-control" id="tutor_nombre" placeholder="Nombre">
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Primer Apellido</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <input type="text" class="form-control" id="tutor_apellido1">
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Segundo apellido</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <input type="text" class="form-control" id="tutor_apellido2">
                         </div>
                     </div>
                     <div>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="estado">
                             <option selected>Estado del tutor</option>
                             <option value="1">En activo</option>
                             <option value="2">Inactivo</option>
@@ -55,14 +55,14 @@ and open the template in the editor.
                     <div class="row">
                         <div class="col-6 mb-3">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="prueba@prueba.com">
+                            <input type="email" class="form-control" id="email" placeholder="prueba@prueba.com">
                         </div>
                         <div class="col-3 mb-3">
                             <label for="exampleFormControlTextarea1" class="badge bg-info text-dark">Telefono</label>
-                            <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="xxx-xxx-xxx">
+                            <input type="phone" class="form-control" id="phone" placeholder="xxx-xxx-xxx">
                         </div>
                         <div>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" id="pais">
                                 <option selected>País</option>
                                 <option value="1">España</option>
                                 <option value="2">Alemania</option>
@@ -70,7 +70,7 @@ and open the template in the editor.
                             </select>
                         </div>
                         <div>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" id="provincia">
                                 <option selected>Provincia</option>
                                 <option value="1">Baleares</option>
                                 <option value="2">Girona</option>
@@ -79,7 +79,7 @@ and open the template in the editor.
                         </div>
                         <br>
                         <div>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example" id="municipio">
                                 <option selected>Municipio</option>
                                 <option value="1">Felanitx</option>
                                 <option value="2">Alcudia</option>
