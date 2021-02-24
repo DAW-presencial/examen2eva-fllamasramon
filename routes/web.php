@@ -15,13 +15,8 @@ use App\Http\Controllers\DatosController;
 */
 
 Route::get('/', function () {
-	//return view('welcome');
-	return "Hola mundo";
+	return view('index');
 });
 
-Route::get('/hola', function () {
-	//return view('welcome');
-	return "zzz";
-});
 
 Route::resource('/datos',DatosController::class);
