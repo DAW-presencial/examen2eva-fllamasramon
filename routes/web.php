@@ -23,4 +23,4 @@ Route::get('locale/{locale}', function ($locale) {
     return redirect()->back();
 });
 
-Route::resource('/datos', DatosController::class);
+Route::resource('DatosController', DatosController::class);
