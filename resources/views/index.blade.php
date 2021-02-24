@@ -33,22 +33,22 @@ and open the template in the editor.
                     <div class="row mb-3">
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Nombre de la empresa</label>
-                            <input type="text" value="{{ old('empresa_nombre') }}" class="form-control" id="empresa_nombre" placeholder="Empresa">
+                            <input type="text" value="{{ old('empresa_nombre') }}" class="form-control" id="empresa_nombre" placeholder="Empresa" required="">
                             {{$errors->first('empresa_nombre')}}
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Nombre del Tutor</label>
-                            <input type="text" value="{{ old('tutor_nombre') }}"class="form-control" id="tutor_nombre" placeholder="Nombre">
+                            <input type="text" value="{{ old('tutor_nombre') }}"class="form-control" id="tutor_nombre" placeholder="Nombre" required="">
                             {{$errors->first('tutor_nombre')}}
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Primer Apellido</label>
-                            <input type="text" value="{{ old('tutor_apellido1') }}"class="form-control" id="tutor_apellido1">
+                            <input type="text" value="{{ old('tutor_apellido1') }}"class="form-control" id="tutor_apellido1" required="">
                             {{$errors->first('tutor_apellido1')}}
                         </div>
                         <div class="col-12">
                             <label for="exampleFormControlInput1" class="badge bg-info text-dark">Segundo apellido</label>
-                            <input type="text" value="{{ old('tutor_apellido2') }}"class="form-control" id="tutor_apellido2">
+                            <input type="text" value="{{ old('tutor_apellido2') }}"class="form-control" id="tutor_apellido2" required="">
                             {{$errors->first('tutor_apellido2')}}
                         </div>
                     </div>
@@ -62,12 +62,12 @@ and open the template in the editor.
 
                     <div class="row">
                         <div class="col-6 mb-3">
-                            <label for="exampleFormControlInput1" class="badge bg-info text-dark">Email</label>
+                            <label for="exampleFormControlInput1" class="badge bg-info text-dark" required="">Email</label>
                             <input type="email" value="{{ old('email') }}"class="form-control" id="email" placeholder="prueba@prueba.com">
                             {{$errors->first('email')}}
                         </div>
                         <div class="col-3 mb-3">
-                            <label for="exampleFormControlTextarea1" class="badge bg-info text-dark">Telefono</label>
+                            <label for="exampleFormControlTextarea1" class="badge bg-info text-dark" required="">Telefono</label>
                             <input type="phone" value="{{ old('phone') }}"class="form-control" id="phone" placeholder="xxx-xxx-xxx">
                             {{$errors->first('phone')}}
                         </div>
